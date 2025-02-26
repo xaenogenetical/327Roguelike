@@ -13,7 +13,7 @@ int dijkstra(coordinate *cell);
 
 void print_loading_bar(int current, int total)
 {
-    int bar_width = 70;
+    int bar_width = 79 - strlen("[] 1680/1680");
     float progress = (float)current / total;
     int pos = bar_width * progress;
     printf("[");
